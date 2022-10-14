@@ -1,0 +1,90 @@
+.savedDataBigContainer {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.savedDataContainer {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+}
+
+.savedDataAllContainer {
+  /* border: 1px solid black; */
+  border-radius: 6px;
+  box-shadow: 1px 1px 10px 1px rgb(230, 230, 230);
+}
+
+.savedDataTableContainer {
+  margin-top: 100px;
+}
+
+.savedDataTable {
+  width: 100%;
+}
+
+.savedDataSecondTableHead {
+  background-color: #f4f2ff;
+  border-bottom: 1px solid #d9d5ec;
+  /* padding: 40px; */
+}
+
+.savedDataTabHead {
+  /* font-size: 2px; */
+  font-weight: 500;
+  color: #6e6893;
+  padding: 10px;
+  font-size: 14px;
+}
+
+.savedDataSymbol {
+  border-radius: 14px;
+  font-weight: 500;
+  background-color: #e6e6f2;
+}
+
+.savedDataSaveDataButton {
+  /* border: 1px solid black; */
+  background-color: #18a0fb;
+  padding: 4px 10px;
+  border-radius: 6px;
+}
+
+.savedDataDeleteButton {
+  background-color: #6d5bd0;
+  color: white;
+  padding: 5px 20px;
+  border-radius: 6px;
+}
+
+.savedDataBackButton {
+  background-color: #6d5bd0;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 6px;
+}
+
+.homeSaveDataButton {
+  /* border: 1px solid black; */
+  background-color: #18a0fb;
+  padding: 5px 10px;
+  border-radius: 6px;
+  /* margin-right: "10px"; */
+}
+
+@media screen and (max-width: 1000px) {
+  .maxSupplySavedData {
+    display: none;
+  }
+  .buttonOnSavedData {
+    display: none;
+  }
+  .priceSavedData {
+    display: none;
+  }
+  .savedDataSymbol {
+    margin: 20px;
+  }
+}

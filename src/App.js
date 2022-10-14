@@ -1,25 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import HomeScreen from "./Components/HomeScreen/HomeScreen";
+import Navbar from "./Components/Navbar/Navbar";
+import SavedDataScreen from "./Components/SavedDataScreen/SavedDataScreen";
+import HeroCard from "./Components/HeroCards/HeroCard";
+import Modal from "./Components/SavedDataScreen/Modal/Modal";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <div className="App">
+        <Navbar />
+        <HeroCard />
+        <Routes>
+          <Route path="/" element={<HomeScreen />} />
+          <Route path="/savedData" element={<SavedDataScreen />} />
+          <Route path="/remove/:id" element={<Modal />} />
+        </Routes>
+      </div>
+    </BrowserRouter>
   );
-}
+};
 
 export default App;

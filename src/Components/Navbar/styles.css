@@ -1,0 +1,20 @@
+.navBigContainer {
+  background-color: rgba(3, 28, 71, 0.8);
+  height: 100px;
+}
+
+.navContainer {
+  display: flex;
+  align-items: center;
+}
+
+.navLogo {
+  height: 100px;
+  width: 120px;
+  margin-left: 20px;
+}
+
+.navLogo > img {
+  height: 100%;
+  width: 100%;
+}
